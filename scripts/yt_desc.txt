@@ -1,0 +1,6 @@
+SyllabusSync — your syllabus, turned into a calendar.
+Next Founders Hackathon 2026.
+
+One click extracts every deadline from a syllabus (assignments, quizzes, exams, project milestones) into an .ics calendar you can import into Google Calendar, Apple Calendar, or Outlook. Ask anything about the syllabus — late policies, grading, office hours — and get cited answers, or honest refusals for anything the syllabus doesn't cover.
+
+Code: https://github.com/maebahesioru/syllabussync

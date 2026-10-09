@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>SyllabusSync — Business Model</title>
+<style>
+  :root{ --bg:#0b0d12; --card:#12151f; --line:#232a3a; --txt:#e8ecf5; --mut:#8b93a8; --acc:#4f8cff; --grn:#3ddc97; }
+  *{ box-sizing:border-box; margin:0; }
+  body{ width:1280px; height:800px; overflow:hidden; background:var(--bg); color:var(--txt);
+        font-family:'Inter','Segoe UI',system-ui,sans-serif; padding:30px 48px; }
+  h1{ font-size:34px; font-weight:800; letter-spacing:-.5px; }
+  h1 span{ color:var(--acc); }
+  .sub{ color:var(--mut); font-size:15.5px; margin-top:4px; }
+  .grid{ display:grid; grid-template-columns:1.25fr 1fr; gap:18px; margin-top:16px; }
+  .card{ background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 20px; }
+  .card h2{ font-size:13px; text-transform:uppercase; letter-spacing:1.2px; color:var(--mut); margin-bottom:8px; }
+  table{ width:100%; border-collapse:collapse; font-size:15px; }
+  td{ padding:5.5px 0; border-bottom:1px solid var(--line); vertical-align:top; }
+  td:last-child{ text-align:right; white-space:nowrap; color:var(--grn); font-weight:600; }
+  tr:last-child td{ border-bottom:none; }
+  .tier{ font-weight:700; }
+  .mut{ color:var(--mut); font-weight:400; font-size:12.5px; display:block; }
+  ul{ list-style:none; font-size:14.5px; }
+  li{ padding:4.5px 0 4.5px 20px; position:relative; border-bottom:1px solid var(--line); }
+  li:last-child{ border-bottom:none; }
+  li::before{ content:'▸'; position:absolute; left:2px; color:var(--acc); }
+  .row2{ display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:14px; }
+  .kpi{ display:flex; gap:18px; margin-top:12px; }
+  .kpi div{ flex:1; background:var(--card); border:1px solid var(--line); border-radius:10px; padding:10px 14px; }
+  .kpi b{ display:block; font-size:20px; color:var(--acc); }
+  .kpi span{ color:var(--mut); font-size:12px; }
+</style>
+</head>
+<body>
+  <h1>SyllabusSync <span>— Business Model</span></h1>
+  <div class="sub">Free for every student. Revenue from premium tools, campus licenses, and tutoring partners.</div>
+
+  <div class="grid">
+    <div class="card">
+      <h2>Revenue streams</h2>
+      <table>
+        <tr><td><span class="tier">Free tier</span><span class="mut">Extraction, calendar export, 20 questions/month</span></td><td>$0</td></tr>
+        <tr><td><span class="tier">Student Premium</span><span class="mut">Unlimited questions, auto-sync, weekly digest, study groups</span></td><td>$3.99/mo · $24/yr</td></tr>
+        <tr><td><span class="tier">Campus license</span><span class="mut">Bulk for universities (orientation handout, advising offices)</span></td><td>$1.50/student/yr</td></tr>
+        <tr><td><span class="tier">API / partners</span><span class="mut">Tutoring platforms &amp; LMS integrations</span></td><td>usage-based</td></tr>
+      </table>
+    </div>
+    <div class="card">
+      <h2>Why it sticks</h2>
+      <ul>
+        <li>Calendar import is the retention hook — it lives where students already look</li>
+        <li>Every semester = new syllabi = re-engagement, by design</li>
+        <li>Cited answers build trust; refusals prevent the "AI invented my deadline" failure</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row2">
+    <div class="card">
+      <h2>Unit economics</h2>
+      <ul>
+        <li>Extraction: one LLM call per syllabus (~$0.02), cached forever</li>
+        <li>Hosting: ~$20/mo serves thousands of students</li>
+        <li>~3–5% premium conversion covers costs at ~1,500 active students</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Go-to-market</h2>
+      <ul>
+        <li>Start: free launch on campus subreddits &amp; Discords (zero CAC)</li>
+        <li>Grow: student government pilots → campus licenses</li>
+        <li>Scale: LMS/tutoring partnerships for distribution</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="kpi">
+    <div><b>24 deadlines</b><span>extracted from one syllabus in the demo</span></div>
+    <div><b>1 click</b><span>from syllabus to importable .ics calendar</span></div>
+    <div><b>$0.02</b><span>marginal cost per syllabus, cached</span></div>
+    <div><b>0 inventions</b><span>off-syllabus questions get refusals, not guesses</span></div>
+  </div>
+</body>
+</html>
