@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+data/kb.json
+data/deadlines.json
+data/uploads/
+data/audio/
+data/quiz_keys.json
+data/quiz_history.json
+data/learner.json
+data/topics.json
+demo/
+.env
